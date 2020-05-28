@@ -51,6 +51,7 @@ struct EventItem: View {
         }
         .frame(width: 150, height: 110)
         .padding(20)
+        .padding(.bottom,10)
         .background(Color.init(UIColor.systemGray6))
         .foregroundColor(.primary)
         .cornerRadius(10)

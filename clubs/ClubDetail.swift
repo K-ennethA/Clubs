@@ -26,9 +26,6 @@ struct ClubDetail: View {
             }
             .padding(40)
             Spacer()
-
-            
-            
         }
         
     }

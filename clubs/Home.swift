@@ -16,7 +16,10 @@ struct Home: View {
                 ForEach(clubsData, id: \.self){ club in
                     EventRow(club: club, events: club.events)
                 }
-                
+                .listRowInsets(.init(top: 20, leading: 0, bottom: 20, trailing: 0))
+                NavigationLink(destination: ClubList()){
+                    Text("All Clubs")
+                }
             }
         .navigationBarTitle("Home")
         }

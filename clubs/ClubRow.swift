@@ -11,18 +11,22 @@ import SwiftUI
 struct ClubRow: View {
     var club: Club
     var body: some View {
-        ZStack(alignment: .leading){
-            Rectangle()
-                     .foregroundColor(Color.blue)
-                     .edgesIgnoringSafeArea(.all)
-                .frame(height: 140)
-            HStack{
-                Text(club.clubName)
-                    .font(.largeTitle)
-                    .foregroundColor(Color.white)
-                    .padding(.leading, 90)
-               }
+        NavigationLink(destination: ClubDetail(club: club)){
+            ZStack(alignment: .leading){
+            
+                Rectangle()
+                    .foregroundColor(Color.blue)
+                    .edgesIgnoringSafeArea(.all)
+                    .frame(height: 140)
+                HStack{
+                    Text(club.clubName)
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
+                        .padding(.leading, 90)
+                    }
+                }
         }
+
     }
 }
 
