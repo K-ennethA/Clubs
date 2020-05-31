@@ -11,22 +11,23 @@ import SwiftUI
 struct ClubRow: View {
     var club: Club
     var body: some View {
-        NavigationLink(destination: ClubDetail(club: club)){
-            ZStack(alignment: .leading){
-            
-                Rectangle()
-                    .foregroundColor(Color.blue)
-                    .edgesIgnoringSafeArea(.all)
-                    .frame(height: 140)
-                HStack{
+//        ZStack(alignment: .leading){
+        VStack{
+            Rectangle()
+                .frame(height: 140.0)
+                .foregroundColor(Color.blue)
+//                .frame(height: 140)
+                .overlay(
                     Text(club.clubName)
-                        .font(.largeTitle)
-                        .foregroundColor(Color.white)
-                        .padding(.leading, 90)
-                    }
-                }
-        }
+                    .font(.largeTitle)
+                    .foregroundColor(Color.white)
+                    .padding(.leading, 80),
+                    alignment: .leading
+            )
 
+        }
+                
+//                }
     }
 }
 
@@ -35,6 +36,6 @@ struct ClubRow_Previews: PreviewProvider {
         Group{
             ClubRow(club: clubsData[0])
         }
-        .previewLayout(.fixed(width: 500, height: 150))
+//        .previewLayout(.fixed(width: 500, height: 150))
     }
 }

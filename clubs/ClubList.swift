@@ -9,11 +9,28 @@
 import SwiftUI
 
 struct ClubList: View {
+
+    
     var body: some View {
-        List(clubsData){ club in
-            ClubRow(club: club)
+
+//        List(clubsData){ club in
+//            NavigationLink(destination: ClubDetail(club: club)){
+//                ClubRow(club: club)
+//            }.frame(width: 435).navigationBarBackButtonHidden(true)
+//
+//        }
+//        .padding(.leading, -21.0)
+//        .onAppear(perform: {
+//            UITableView.appearance().separatorStyle = .none
+//        })
+        VStack{
             
+            ForEach(clubsData) { club in
+                ClubRow(club: club)
+            }
+            Spacer() 
         }
+
     }
 }
 

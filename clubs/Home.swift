@@ -19,7 +19,9 @@ struct Home: View {
                 .listRowInsets(.init(top: 20, leading: 0, bottom: 20, trailing: 0))
                 NavigationLink(destination: ClubList()){
                     Text("All Clubs")
-                }
+                }.onAppear(perform: {
+                    UITableView.appearance().separatorStyle = .singleLine
+                })
             }
         .navigationBarTitle("Home")
         }
