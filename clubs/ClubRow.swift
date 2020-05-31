@@ -25,7 +25,9 @@ struct ClubRow: View {
                         .padding(.leading, 90)
                     }
                 }
+
         }
+
 
     }
 }

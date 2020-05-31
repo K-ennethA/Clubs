@@ -11,18 +11,20 @@ import SwiftUI
 struct ClubDetail: View {
     var club: Club
     var body: some View {
-        VStack(){
+        VStack{
             Rectangle()
                 .foregroundColor(Color.init(UIColor.systemBlue))
                 .frame(height: 250)
                 .edgesIgnoringSafeArea(.top)
             ClubLogoView()
-                .offset(x:0,y: -130)
+                .offset(x:0,y: -230)
                 .padding(.bottom, -130)
+            Spacer()
             VStack(alignment: .leading){
                 Text(club.clubName)
                     .padding(.bottom)
                 Text(club.clubDescription)
+                Spacer()
             }
             .padding(40)
             Spacer()

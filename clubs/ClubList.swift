@@ -12,6 +12,7 @@ struct ClubList: View {
     var body: some View {
         List(clubsData){ club in
             ClubRow(club: club)
+
             
         }
     }
