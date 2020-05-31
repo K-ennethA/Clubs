@@ -11,35 +11,20 @@ import SwiftUI
 struct ClubRow: View {
     var club: Club
     var body: some View {
-//        ZStack(alignment: .leading){
         VStack{
             Rectangle()
                 .frame(height: 140.0)
                 .foregroundColor(Color.blue)
-//                .frame(height: 140)
                 .overlay(
                     Text(club.clubName)
-<<<<<<< HEAD
                         .font(.largeTitle)
                         .foregroundColor(Color.white)
-                        .padding(.leading, 90)
-                    }
-                }
+                        .padding(.leading, 80),
+                        alignment: .leading
+                )
+
 
         }
-
-
-=======
-                    .font(.largeTitle)
-                    .foregroundColor(Color.white)
-                    .padding(.leading, 80),
-                    alignment: .leading
-            )
-
-        }
-                
-//                }
->>>>>>> 36f49de089324f0805c3162422ad13341ac07aab
     }
 }
 
