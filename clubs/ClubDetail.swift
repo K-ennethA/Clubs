@@ -16,15 +16,12 @@ struct ClubDetail: View {
                 .foregroundColor(Color.init(UIColor.systemBlue))
                 .frame(height: 250)
                 .edgesIgnoringSafeArea(.top)
-            ClubLogoView()
-                .offset(x:0,y: -230)
-                .padding(.bottom, -130)
-            Spacer()
+                .overlay(ClubLogoView())
+                .padding(.bottom, -50)
             VStack(alignment: .leading){
                 Text(club.clubName)
                     .padding(.bottom)
                 Text(club.clubDescription)
-                Spacer()
             }
             .padding(40)
             Spacer()

@@ -10,25 +10,29 @@ import SwiftUI
 
 struct ClubList: View {
 
-    
+
     var body: some View {
 
         VStack{
-            
+
             ForEach(clubsData) { club in
                 NavigationLink(destination: ClubDetail(club: club)){
                     ClubRow(club: club)
                 }
             }
-            Spacer() 
+            Spacer()
+
+
+
+
         }
 
     }
 }
+
 
 struct ClubList_Previews: PreviewProvider {
     static var previews: some View {
         ClubList()
     }
 }
-
