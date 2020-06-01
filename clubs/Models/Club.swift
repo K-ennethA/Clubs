@@ -13,5 +13,6 @@ struct Club: Hashable,Codable, Identifiable {
     var id: Int
     var clubName: String
     var clubDescription: String
+    var isFavorite: Bool
     var events: [Event]
 }

@@ -22,13 +22,4 @@ struct Event: Hashable, Codable, Identifiable {
     var eventLocation: String
     var eventDescription: String
 
-
-//
-    
-//    enum Tag: String{
-//        case social = "Social"
-//    }
-//    func setTagColor(){
-//        
-//    }
 }

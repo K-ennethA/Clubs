@@ -9,7 +9,12 @@
 import SwiftUI
 
 struct ClubDetail: View {
+    @EnvironmentObject var userData: UserData
     var club: Club
+    var clubIndex: Int {
+        userData.clubs.firstIndex(where: { $0.id == club.id })!
+    }
+
     var body: some View {
         VStack{
             Rectangle()
@@ -19,15 +24,33 @@ struct ClubDetail: View {
                 .overlay(ClubLogoView())
                 .padding(.bottom, -50)
             VStack(alignment: .leading){
-                Text(club.clubName)
-                    .padding(.bottom)
-                Text(club.clubDescription)
-                Text(club.clubDescription)
+                HStack{
+                    Text(club.clubName)
+                        .padding(.bottom)
 
-                Text(club.clubDescription)
+                    Button(action: {
+                        self.userData.clubs[self.clubIndex]
+                            .isFavorite.toggle()
+                    }) {
+                        if self.userData.clubs[self.clubIndex]
+                            .isFavorite {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(Color.yellow)
+                        } else {
+                            Image(systemName: "star")
+                                .foregroundColor(Color.gray)
+                        }
+                    }
+
+                }
+       
+                ScrollView(.vertical, showsIndicators: false){
+                    Text(club.clubDescription)
+                }
+          
 
             }
-            .padding(40)
+//            .padding(40)
             Spacer()
         }
         
@@ -47,7 +70,10 @@ struct ClubLogoView: View {
 }
 struct Club_Detail_Previews: PreviewProvider {
     static var previews: some View {
-        ClubDetail(club: clubsData[0])
+//        ClubDetail(club: clubsData[0])
+        let userData = UserData()
+        return ClubDetail(club: userData.clubs[0])
+            .environmentObject(userData)
     }
 }
 

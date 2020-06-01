@@ -23,7 +23,9 @@
 		9F571A28247F71D1000FC6E1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A27247F71D1000FC6E1 /* Data.swift */; };
 		9F571A2A2480507A000FC6E1 /* ClubRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A292480507A000FC6E1 /* ClubRow.swift */; };
 		9F571A2C24805099000FC6E1 /* ClubList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A2B24805099000FC6E1 /* ClubList.swift */; };
-		9F571A2E2484BBF1000FC6E1 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A2D2484BBF1000FC6E1 /* Tags.swift */; };
+		9F571A3024857444000FC6E1 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A2F24857444000FC6E1 /* UserData.swift */; };
+		9F571A322485C856000FC6E1 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A312485C856000FC6E1 /* AppView.swift */; };
+		9F571A342485C911000FC6E1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A332485C911000FC6E1 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +47,9 @@
 		9F571A27247F71D1000FC6E1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		9F571A292480507A000FC6E1 /* ClubRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubRow.swift; sourceTree = "<group>"; };
 		9F571A2B24805099000FC6E1 /* ClubList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubList.swift; sourceTree = "<group>"; };
-		9F571A2D2484BBF1000FC6E1 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		9F571A2F24857444000FC6E1 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		9F571A312485C856000FC6E1 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		9F571A332485C911000FC6E1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				9F571A01247EFED2000FC6E1 /* AppDelegate.swift */,
 				9F571A03247EFED2000FC6E1 /* SceneDelegate.swift */,
 				9F571A05247EFED2000FC6E1 /* ContentView.swift */,
+				9F571A312485C856000FC6E1 /* AppView.swift */,
+				9F571A332485C911000FC6E1 /* ProfileView.swift */,
 				9F571A1F247F2A34000FC6E1 /* Home.swift */,
 				9F571A1A247F00FA000FC6E1 /* EventRow.swift */,
 				9F571A292480507A000FC6E1 /* ClubRow.swift */,
@@ -111,7 +117,7 @@
 				9F571A16247EFFF1000FC6E1 /* Events.swift */,
 				9F571A18247F0028000FC6E1 /* Club.swift */,
 				9F571A27247F71D1000FC6E1 /* Data.swift */,
-				9F571A2D2484BBF1000FC6E1 /* Tags.swift */,
+				9F571A2F24857444000FC6E1 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,16 +202,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F571A3024857444000FC6E1 /* UserData.swift in Sources */,
 				9F571A2A2480507A000FC6E1 /* ClubRow.swift in Sources */,
 				9F571A17247EFFF1000FC6E1 /* Events.swift in Sources */,
 				9F571A28247F71D1000FC6E1 /* Data.swift in Sources */,
 				9F571A2C24805099000FC6E1 /* ClubList.swift in Sources */,
 				9F571A1B247F00FA000FC6E1 /* EventRow.swift in Sources */,
-				9F571A2E2484BBF1000FC6E1 /* Tags.swift in Sources */,
 				9F571A02247EFED2000FC6E1 /* AppDelegate.swift in Sources */,
+				9F571A342485C911000FC6E1 /* ProfileView.swift in Sources */,
 				9F571A19247F0028000FC6E1 /* Club.swift in Sources */,
 				9F571A22247F2B03000FC6E1 /* EventDetail.swift in Sources */,
 				9F571A04247EFED2000FC6E1 /* SceneDelegate.swift in Sources */,
+				9F571A322485C856000FC6E1 /* AppView.swift in Sources */,
 				9F571A20247F2A34000FC6E1 /* Home.swift in Sources */,
 				9F571A24247F3689000FC6E1 /* ClubDetail.swift in Sources */,
 				9F571A06247EFED2000FC6E1 /* ContentView.swift in Sources */,
