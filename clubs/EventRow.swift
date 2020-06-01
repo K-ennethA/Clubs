@@ -42,19 +42,32 @@ struct EventItem: View {
 
     var body: some View {
         VStack(alignment: .leading,spacing: 10){
-            Text(event.eventDate)
-                .font(.subheadline)
-            Text(event.eventTitle)
-                .font(.headline)
-            Text(event.eventTag)
-                .font(.subheadline)
+            Rectangle()
+                .frame(width: 180, height: 130.0)
+                .foregroundColor(Color.init(UIColor.systemGray6))
+
+                .overlay(VStack(alignment: .leading, spacing: 10){
+                    Text(event.eventDate)
+                        .font(.subheadline)
+                    Text(event.eventTitle)
+                        .font(.headline)
+                    Text(event.eventTag)
+                        .font(.subheadline)
+                    
+                }
+                .foregroundColor(.primary)
+                .padding(20)
+//                .padding(.bottom,10)
+                .background(Color.init(UIColor.systemGray6))
+                .foregroundColor(.primary)
+                .cornerRadius(10),
+                alignment: .leading
+
+
+            )
+            
+                      
         }
-        .frame(width: 150, height: 110)
-        .padding(20)
-        .padding(.bottom,10)
-        .background(Color.init(UIColor.systemGray6))
-        .foregroundColor(.primary)
-        .cornerRadius(10)
     
         
     }

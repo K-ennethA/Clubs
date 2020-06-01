@@ -16,13 +16,23 @@ struct ClubList: View {
         VStack{
             
             ForEach(clubsData) { club in
-                ClubRow(club: club)
+                NavigationLink(
+                    destination: ClubDetail(club: club)
+                )
+                {
+                    ClubRow(club: club)
+                }
             }
-            Spacer() 
+            Spacer()
+            
+            
+            
+            
         }
 
     }
 }
+
 
 struct ClubList_Previews: PreviewProvider {
     static var previews: some View {
