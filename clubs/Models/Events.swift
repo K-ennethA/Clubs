@@ -8,6 +8,10 @@
 
 import SwiftUI
 
+var colorDict: [String:Color] = [
+    "Social" : Color.init(UIColor.systemTeal),
+    "Meeting": Color.init(UIColor.systemGray4)
+]
 
 struct Event: Hashable, Codable, Identifiable {
     var id: Int
@@ -18,10 +22,7 @@ struct Event: Hashable, Codable, Identifiable {
     var eventLocation: String
     var eventDescription: String
 
-//    var colorDict: [String:Color] = [
-//        "Social" : Color.init(UIColor.systemGray6),
-//        "Meeting": Color.init(UIColor.systemTeal)
-//    ]
+
 //
     
 //    enum Tag: String{

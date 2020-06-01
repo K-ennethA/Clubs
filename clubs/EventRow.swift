@@ -43,8 +43,8 @@ struct EventItem: View {
     var body: some View {
         VStack(alignment: .leading,spacing: 10){
             Rectangle()
-                .frame(width: 180, height: 130.0)
-                .foregroundColor(Color.init(UIColor.systemGray6))
+                .frame(width: 220, height: 130.0)
+                .foregroundColor(colorDict[event.eventTag])
                 .cornerRadius(10)
                 .overlay(VStack(alignment: .leading, spacing: 10){
                     Text(event.eventTitle)
@@ -62,7 +62,7 @@ struct EventItem: View {
                     }
                    
                     Text(event.eventTag)
-                        .foregroundColor(Color.gray)
+                        .foregroundColor(.white)
                         .font(Font.system(size: 14.0))
 
 
