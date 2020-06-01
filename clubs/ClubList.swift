@@ -16,7 +16,9 @@ struct ClubList: View {
         VStack{
             
             ForEach(clubsData) { club in
-                ClubRow(club: club)
+                NavigationLink(destination: ClubDetail(club: club)){
+                    ClubRow(club: club)
+                }
             }
             Spacer() 
         }
