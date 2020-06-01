@@ -15,5 +15,6 @@ struct Event: Hashable, Codable, Identifiable {
     var eventDate: String
     var eventTag: String
     var eventTime: String
+    var eventLocation: String
     var eventDescription: String
 }

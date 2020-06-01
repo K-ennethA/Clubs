@@ -9,6 +9,7 @@
                 "eventTitle" : "General Meeting",
                 "eventDate" : "Fridays",
                 "eventTag": "Meeting",
+                "eventLocation": "CS 301",
                 "eventTime": "5:00pm",
                 "eventDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex giea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
             },
@@ -18,6 +19,7 @@
                 "eventDate" : "Fridays",
                 "eventTag": "Meeting",
                 "eventTime": "5:00pm",
+                "eventLocation": "CS 301",
                 "eventDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex giea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
             },
             {
@@ -26,6 +28,7 @@
                 "eventDate" : "April 31, 2020",
                 "eventTag": "Social",
                 "eventTime": "7:00pm",
+                "eventLocation": "CS 301",
                 "eventDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex giea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
             }
         ]
@@ -41,6 +44,7 @@
                 "eventDate" : "March 22, 2020",
                 "eventTag": "Meeting",
                 "eventTime": "4:00pm",
+                "eventLocation": "CS 301",
                 "eventDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex giea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
             }
         ]
@@ -56,6 +60,7 @@
                 "eventDate" : "April 22, 2020",
                 "eventTag": "Meeting",
                 "eventTime": "5:00pm",
+                "eventLocation": "CS 301",
                 "eventDescription" : "Lorem ipsum dolor sit amettempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  culpa qui officia deserunt mollit anim id est laborum"
             },
             {
@@ -64,6 +69,7 @@
                 "eventDate" : "February 14, 2020",
                 "eventTag": "Sport",
                 "eventTime": "7:00pm",
+                "eventLocation": "CS 301",
                 "eventDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex giea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
             }
         ]
@@ -79,6 +85,7 @@
                 "eventDate" : "Everyday",
                 "eventTag": "Meeting",
                 "eventTime": "All Day",
+                "eventLocation": "CS 301",
                 "eventDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex giea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
             }
         ]

@@ -45,15 +45,26 @@ struct EventItem: View {
             Rectangle()
                 .frame(width: 180, height: 130.0)
                 .foregroundColor(Color.init(UIColor.systemGray6))
-
                 .overlay(VStack(alignment: .leading, spacing: 10){
-                    Text(event.eventDate)
-                        .font(.subheadline)
                     Text(event.eventTitle)
-                        .font(.headline)
-                    Text(event.eventTag)
-                        .font(.subheadline)
+                    .font(.headline)
+                    HStack{
+                        Text(event.eventDate)
+                        Text(event.eventTime)
+                    }.font(Font.system(size: 14.0))
                     
+                    HStack{
+                        Image(systemName: "mappin")
+                            .font(.system(size: 14, weight: .regular))
+                        Text(event.eventLocation)
+                            .font(Font.system(size: 14.0))
+                    }
+                   
+                    Text(event.eventTag)
+                        .foregroundColor(Color.gray)
+                        .font(Font.system(size: 14.0))
+
+
                 }
                 .foregroundColor(.primary)
                 .padding(20)
