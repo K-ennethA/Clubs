@@ -22,6 +22,10 @@ struct ClubDetail: View {
                 Text(club.clubName)
                     .padding(.bottom)
                 Text(club.clubDescription)
+                Text(club.clubDescription)
+
+                Text(club.clubDescription)
+
             }
             .padding(40)
             Spacer()

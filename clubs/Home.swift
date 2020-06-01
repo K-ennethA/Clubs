@@ -11,6 +11,7 @@ import SwiftUI
 struct Home: View {
     var clubs: [Club]
     var body: some View {
+
         NavigationView{
             List{
                 ForEach(clubsData, id: \.self){ club in

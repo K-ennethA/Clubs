@@ -6,7 +6,7 @@
 //  Copyright © 2020 StudentDevs. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
 
 struct Event: Hashable, Codable, Identifiable {
@@ -15,5 +15,19 @@ struct Event: Hashable, Codable, Identifiable {
     var eventDate: String
     var eventTag: String
     var eventTime: String
+    var eventLocation: String
     var eventDescription: String
+
+//    var colorDict: [String:Color] = [
+//        "Social" : Color.init(UIColor.systemGray6),
+//        "Meeting": Color.init(UIColor.systemTeal)
+//    ]
+//
+    
+//    enum Tag: String{
+//        case social = "Social"
+//    }
+//    func setTagColor(){
+//        
+//    }
 }

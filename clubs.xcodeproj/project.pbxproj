@@ -23,6 +23,7 @@
 		9F571A28247F71D1000FC6E1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A27247F71D1000FC6E1 /* Data.swift */; };
 		9F571A2A2480507A000FC6E1 /* ClubRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A292480507A000FC6E1 /* ClubRow.swift */; };
 		9F571A2C24805099000FC6E1 /* ClubList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A2B24805099000FC6E1 /* ClubList.swift */; };
+		9F571A2E2484BBF1000FC6E1 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F571A2D2484BBF1000FC6E1 /* Tags.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		9F571A27247F71D1000FC6E1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		9F571A292480507A000FC6E1 /* ClubRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubRow.swift; sourceTree = "<group>"; };
 		9F571A2B24805099000FC6E1 /* ClubList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubList.swift; sourceTree = "<group>"; };
+		9F571A2D2484BBF1000FC6E1 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				9F571A16247EFFF1000FC6E1 /* Events.swift */,
 				9F571A18247F0028000FC6E1 /* Club.swift */,
 				9F571A27247F71D1000FC6E1 /* Data.swift */,
+				9F571A2D2484BBF1000FC6E1 /* Tags.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				9F571A28247F71D1000FC6E1 /* Data.swift in Sources */,
 				9F571A2C24805099000FC6E1 /* ClubList.swift in Sources */,
 				9F571A1B247F00FA000FC6E1 /* EventRow.swift in Sources */,
+				9F571A2E2484BBF1000FC6E1 /* Tags.swift in Sources */,
 				9F571A02247EFED2000FC6E1 /* AppDelegate.swift in Sources */,
 				9F571A19247F0028000FC6E1 /* Club.swift in Sources */,
 				9F571A22247F2B03000FC6E1 /* EventDetail.swift in Sources */,
