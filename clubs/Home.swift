@@ -9,15 +9,26 @@
 import SwiftUI
 
 struct Home: View {
+//    var clubs: [Club] {
+//        clubsData.filter {$0.isFavorite}
+//    }
     var clubs: [Club]
-    @EnvironmentObject var userData: UserData
+//    @EnvironmentObject var userData: UserData
 
     var body: some View {
 
         NavigationView{
             List{
-                ForEach(clubsData, id: \.self){ club in
+                ForEach(clubs, id: \.self){ club in
+//                    if club.isFavorite {
+//                        print("hi")
+//                              
+//                    }
                     EventRow(club: club, events: club.events)
+
+                    
+  
+
                 }
                 .listRowInsets(.init(top: 20, leading: 0, bottom: 20, trailing: 0))
                 NavigationLink(destination: ClubList()
@@ -35,9 +46,11 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        let userData = UserData()
-        return Home(clubs: userData.clubs)
-            .environmentObject(userData)
+//        return Home()
+//            .environmentObject(UserData())
+//        let userData = UserData()
+        return Home(clubs: clubsData)
+//            .environmentObject(userData)
 
     }
 }
