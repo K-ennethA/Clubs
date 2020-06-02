@@ -13,26 +13,24 @@ struct Home: View {
 //        clubsData.filter {$0.isFavorite}
 //    }
     var clubs: [Club]
-//    @EnvironmentObject var userData: UserData
+    @EnvironmentObject var userData: UserData
 
     var body: some View {
 
         NavigationView{
-            List{
-                ForEach(clubs, id: \.self){ club in
-//                    if club.isFavorite {
-//                        print("hi")
-//                              
-//                    }
-                    EventRow(club: club, events: club.events)
+            List {
+                ForEach(userData.clubs){ club in
+                    if club.isFavorite {
+                              
+                        EventRow(club: club, events: club.events)
 
+                    }
                     
   
 
                 }
                 .listRowInsets(.init(top: 20, leading: 0, bottom: 20, trailing: 0))
                 NavigationLink(destination: ClubList()
-//                    .environmentObject(userData)
                 ){
                     Text("All Clubs")
                 }.onAppear(perform: {
@@ -46,11 +44,10 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-//        return Home()
-//            .environmentObject(UserData())
-//        let userData = UserData()
-        return Home(clubs: clubsData)
-//            .environmentObject(userData)
+
+        let userData = UserData()
+        return Home(clubs: userData.clubs)
+            .environmentObject(userData)
 
     }
 }
